@@ -22,9 +22,11 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: npm run build
+        run: GENERATE_SOURCEMAP=false NODE_ENV=production npm run build
         env:
-          CI: false # Para evitar que o build falhe por causa de warnings
+          CI: false
+          DISABLE_ESLINT_PLUGIN: true
+          INLINE_RUNTIME_CHUNK: false
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

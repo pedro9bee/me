@@ -21,4 +21,14 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
+  // Adicione estas configurações para lidar com caracteres especiais
+  future: {
+    respectDefaultRingColorOpacity: true,
+  },
+  experimental: {
+    relaxedWhitespace: true,
+  },
+  // Desabilitar uso de "!" em classes (se você não precisar delas)
+  separator: '_', // Muda o separador padrão ":" para "_" (opcional)
+  important: '#root', // Define um seletor importante em vez de usar !important
 }

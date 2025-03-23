@@ -5,7 +5,7 @@ import { LinkedinOutlined, GithubOutlined, GlobalOutlined } from '@ant-design/ic
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="pt-32 pb-20 px-6" style={{
-      backgroundImage: 'url(${process.env.PUBLIC_URL}/images/hero-bg.jpg)',
+      backgroundImage: `url(${process.env.PUBLIC_URL}/images/hero-bg.jpg)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>
@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
               <span>Portugal (Remote)</span>
             </div>
             <div className="flex space-x-4">
-              <Button icon={<LinkedinOutlined />} className="!rounded-button" href="https://linkedin.com" target="_blank">LinkedIn</Button>
-              <Button icon={<GithubOutlined />} className="!rounded-button" href="https://github.com" target="_blank">GitHub</Button>
+              <Button icon={<LinkedinOutlined />} data-rounded="true" href="https://linkedin.com" target="_blank">LinkedIn</Button>
+              <Button icon={<GithubOutlined />} data-rounded="true" href="https://github.com" target="_blank">GitHub</Button>
             </div>
           </div>
         </div>

@@ -27,8 +27,5 @@ module.exports = {
   },
   experimental: {
     relaxedWhitespace: true,
-  },
-  // Desabilitar uso de "!" em classes (se você não precisar delas)
-  separator: '_', // Muda o separador padrão ":" para "_" (opcional)
-  important: '#root', // Define um seletor importante em vez de usar !important
+  }
 }

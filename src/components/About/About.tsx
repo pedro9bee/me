@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <img 
-              src="/images/profile.jpg"
+              src={`${process.env.PUBLIC_URL}/images/profile.jpg`}
               alt="Profile"
               className="rounded-lg shadow-lg w-full"
             />

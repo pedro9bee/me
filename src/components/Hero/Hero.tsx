@@ -5,7 +5,7 @@ import { LinkedinOutlined, GithubOutlined, GlobalOutlined } from '@ant-design/ic
 const Hero: React.FC = () => {
   return (
     <section id="hero" className="pt-32 pb-20 px-6" style={{
-      backgroundImage: 'url(/images/hero-bg.jpg)',
+      backgroundImage: 'url(${process.env.PUBLIC_URL}/images/hero-bg.jpg)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }}>

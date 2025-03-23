@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
               <span>Portugal (Remote)</span>
             </div>
             <div className="flex space-x-4">
-              <Button icon={<LinkedinOutlined />} data-rounded="true" href="https://linkedin.com" target="_blank">LinkedIn</Button>
-              <Button icon={<GithubOutlined />} data-rounded="true" href="https://github.com" target="_blank">GitHub</Button>
+              <Button icon={<LinkedinOutlined />} data-rounded="true" href="https://linkedin.com/in/pedro9bee" target="_blank">LinkedIn</Button>
+              <Button icon={<GithubOutlined />} data-rounded="true" href="https://github.com/pedro9bee" target="_blank">GitHub</Button>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ body {
 }
 
 /* Fix for Ant Design buttons with Tailwind */
-.ant-btn.!rounded-button {
+.ant-btn[data-rounded="true"] {
   border-radius: 0.375rem;
 }
 

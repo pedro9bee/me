@@ -15,7 +15,8 @@ module.exports = {
           reduceIdents: false,
           zindex: false,
           calc: false,
-          mergeIdents: false
+          mergeIdents: false,
+          normalizeWhitespace: false 
         }
       ]
     }),

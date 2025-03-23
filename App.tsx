@@ -62,8 +62,8 @@ const App: React.FC = () => {
                 <span>Portugal (Remote)</span>
               </div>
               <div className="flex space-x-4">
-                <Button icon={<LinkedinOutlined />} className="!rounded-button" href="https://linkedin.com" target="_blank">LinkedIn</Button>
-                <Button icon={<GithubOutlined />} className="!rounded-button" href="https://github.com" target="_blank">GitHub</Button>
+                <Button icon={<LinkedinOutlined />} className="!rounded-button" href="https://www.linkedin.com/in/pedro9bee/" target="_blank">LinkedIn</Button>
+                <Button icon={<GithubOutlined />} className="!rounded-button" href="https://github.com/pedro9bee" target="_blank">GitHub</Button>
               </div>
             </div>
           </div>

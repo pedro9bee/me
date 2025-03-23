@@ -7,6 +7,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # Defina permissões explicitamente
+    permissions:
+      contents: write
+      pages: write
     
     steps:
       - name: Checkout code
@@ -33,4 +37,6 @@ jobs:
         with:
           folder: build # Pasta que contém os arquivos de build
           branch: gh-pages # A branch onde serão publicados os arquivos
-          token: ${{ secrets.GITHUB_TOKEN }} # Usa o token padrão do GitHub
+          token: ${{ secrets.DEPLOY_TOKEN }} # Usa o token de acesso pessoal
+          clean: true # Limpa arquivos antigos
+          force: true # Força o push para a branch gh-pages

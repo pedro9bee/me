@@ -10,13 +10,22 @@ module.exports = {
           discardComments: {
             removeAll: true,
           },
-          // Disable transformations that can cause problems
+          // Preserve important CSS features
           cssDeclarationSorter: false,
           reduceIdents: false,
           zindex: false,
           calc: false,
           mergeIdents: false,
-          normalizeWhitespace: false 
+          normalizeWhitespace: false,
+          // Ensure responsive classes are preserved
+          mergeRules: false,
+          mergeLonghand: false,
+          minifySelectors: false,
+          minifyParams: false,
+          convertValues: false,
+          reduceInitial: false,
+          reduceTransforms: false,
+          uniqueSelectors: false
         }
       ]
     }),

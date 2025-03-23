@@ -26,11 +26,15 @@ jobs:
         run: npm ci
         
       - name: Build
-        run: GENERATE_SOURCEMAP=false NODE_ENV=production npm run build
-        env:
-          CI: false
-          DISABLE_ESLINT_PLUGIN: true
-          INLINE_RUNTIME_CHUNK: false
+        run: |
+          # Ensure proper environment variables for production build
+          export GENERATE_SOURCEMAP=false
+          export NODE_ENV=production
+          export CI=false
+          export DISABLE_ESLINT_PLUGIN=true
+          export INLINE_RUNTIME_CHUNK=false
+          # Build the application
+          npm run build
         
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
